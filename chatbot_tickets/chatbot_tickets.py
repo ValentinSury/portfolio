@@ -39,7 +39,7 @@ class TicketBot:
                          settings_ticket.FLY[1]: create_fly(3)}
 
     def run(self):
-        """ Функция запуска бота """
+        """Метод запуска бота """
 
         for event in self.long_poller.listen():
             try:
@@ -49,7 +49,7 @@ class TicketBot:
 
     @db_session
     def on_event(self, event):
-        """ Функция реагирующая на действие пользователя """
+        """ Метод регагирующий на действие пользователя """
 
         if event.type != vk_api.bot_longpoll.VkBotEventType.MESSAGE_NEW:
             return
@@ -74,7 +74,7 @@ class TicketBot:
                                peer_id=user_id)
 
     def continue_scenario(self, user_id, text, state):
-        """ Функция продолжающая сценарий """
+        """ Метод продолжающая сценарий """
 
         if text in settings_ticket.INTENTS[1]['tokens']:
             text_to_send = settings_ticket.INTENTS[1]['answer']
@@ -118,7 +118,7 @@ class TicketBot:
         return text_to_send
 
     def start_scenario(self, scenario_name, user_id):
-        """ Функция начинающая сценарий """
+        """ Метод начинающий сценарий """
 
         scenario = settings_ticket.SCENARIOS[scenario_name]
         first_step = scenario['first_step']
@@ -129,7 +129,7 @@ class TicketBot:
         return text_to_send
 
     def send_image(self, image, user_id):
-        """ Функция отправляющая изображения билета пользователю """
+        """ Метод отправляющий изображения билета пользователю """
 
         upload_url = self.api.photos.getMessagesUploadServer()['upload_url']
         upload_data = requests.post(url=upload_url, files={'photo': ('image.png', image, 'image/png')}).json()
