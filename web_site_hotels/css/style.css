@@ -1,0 +1,577 @@
+@font-face {
+    font-family: 'MullerBold';
+	src: url('../fonts/MullerBold.woff') format('woff'),
+		url('../fonts/MullerBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'MullerLight';
+	src: url('../fonts/MullerLight.woff') format('woff'),
+		url('../fonts/MullerLight.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'MullerMedium';
+	src: url('../fonts/MullerMedium.woff') format('woff'),
+		url('../fonts/MullerMedium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'MullerRegular';
+	src: url('../fonts/MullerRegular.woff') format('woff'),
+		url('../fonts/MullerRegular.woff2') format('woff2');
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+	width: 1170px;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.sequence_list {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sequence_list_column {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header*/
+.header_list {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.header_li_logo {
+    margin-bottom: 40px;
+    transform: translateY(+20px);
+}
+
+.header_li_number {
+    margin-left: 20px;
+    padding: 40px;
+}
+
+
+.header_tel_number {
+    font-family: 'MullerBold';
+    font-size: 22px;
+    text-decoration: none;
+    color: #666666;
+}
+
+.header_li_private_office {
+    margin-left: 420px;
+    padding: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url(../img/narrow_gold.svg);
+    background-position: 0% 47%;
+    background-repeat: no-repeat;
+}
+
+.header_private_office {
+    font-family: 'MullerRegular';
+    font-size: 16px;
+    text-decoration: none;
+    color: #cc9933;
+}
+
+.header_li_item {
+    height: 20px;
+    padding: 20px;
+}
+
+.header_item {
+    font-family: 'MullerRegular';
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.header_li_input {
+    padding-left: 100px;
+    padding-right: 20px;
+}
+
+.header_form {
+    display: flex;
+    justify-content: start;
+}
+
+.header_input {
+    font-family: 'MullerRegular';
+    font-size: 14px;
+    width: 280px;
+    padding: 15px;
+    border: 0px;
+    border-radius: 10px 0 0 10px;
+    background-color: #f1f1f1;
+    transform: translateY(+8px);
+}
+
+.header_button {
+    padding: 22px;
+    padding-left: 25px;
+    border: 0px;
+    border-radius: 0 10px 10px 0;
+    background-color: #f1f1f1;
+    background-image: url(../img/search.svg);
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: center center;
+    transform: translateY(+8px);
+}
+
+.heading {
+    font-family: 'MullerRegular';
+    font-size: 40px;
+    padding-left: 36px;
+}
+
+/*Fast order*/
+.fast_order_frame {
+    width: 520px;
+    height: 400px;
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+}
+
+.fast_order_form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.standart_input {
+    font-family: 'MullerRegular';
+    font-size: 16px;
+    margin-bottom: 25px;
+    padding: 20px;
+    padding-left: 16px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+
+.fast_order_find_room {
+    font-family: 'MullerBold';
+    font-size: 16px;
+    padding: 20px;
+    width: 160px;
+    color: white;
+    background-color: #cc9933;
+    border: 0px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.fast_order_available {
+    position: relative;
+    bottom: 37px;
+    left: 170px;
+}
+
+.fast_order_number {
+    color: #cc9933;
+    margin-left: 25px;
+    display: inline;
+}
+
+.fast_order_text {
+    font-family: 'MullerRegular';
+    font-size: 16px;
+    color: #cfcfcf;
+    display: inline;
+}
+
+/*Propose*/
+.propose_frame {
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+}
+
+.luxe_propose_frame {
+    width: 590px;
+    height: 540px;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    background-image: url(../img/2.jpg);
+}
+
+.proposition_luxe_room {
+font-family: "MullerBold";
+font-size: 66px;
+line-height: 0.9;
+color: white;
+padding-top: 265px;
+margin: 0;
+padding-bottom: 30px;
+max-width: 240px;
+padding-left: 40px;
+}
+
+.proposition_cost {
+    font-family: "MullerRegular";
+    font-size: 35px;
+    color: #cfcfcf;
+    padding-left: 40px;
+    display: inline;
+}
+
+.proposition_details {
+    font-family: "MullerRegular";
+    font-size: 16px;
+    padding-left: 35px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: #cc9933;
+    display: inline;
+    background-image: url(../img/narrow_gold.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+/*About us*/
+.about_us_unit {
+    font-family: "MullerRegular";
+    font-size: 16px;
+    line-height: 30px;
+    color: #666666;
+}
+
+/*Service*/
+.service_frame {
+    width: 570px;
+    height: 320px;
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.service_image {
+    padding-bottom: 30px;
+    display: block;
+    width: 100%;
+}
+
+.service_text {    
+    padding-left: 38px;
+    padding-right: 25px;
+}
+
+.service_link {
+    font-family: "MullerMedium";
+    font-size: 22px;
+    text-decoration: none;
+    color: #cc9933;
+    padding-right: 20px;
+    background-image: url(../img/narrow_gold.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.services_description {
+    font-family: "MullerRegular";
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/*Benefits*/
+.benefits_frame {
+    width: 270px;
+    height: 274px;
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.benefits_image {
+    padding-top: 38px;
+    padding-left: 35px;
+
+}
+
+.benefits_description {
+    font-family: "MullerRegular";
+    font-size: 16px;
+    line-height: 28px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+/*Accommodation*/
+.accommodation_frame {
+    width: 370px;
+    height: 440px;
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.accommodation_hotel_image {
+    display: block;
+    width: 100%;
+}
+
+.accommodation_text {
+    padding-top: 24px;
+    padding-left: 38px;
+    padding-right: 70px;
+}
+
+.accommodation_cost {
+    font-family: "MullerRegular";
+    font-size: 16px;
+    height: 30px;
+}
+
+.accommodation_strong {
+    font-family: "MullerBold";
+    font-size: 16px;
+    height: 30px;
+}
+
+.accommodation_hotel_name {
+    font-family: "MullerRegular";
+    font-size: 16px;
+    height: 30px;
+}
+
+.accommodation_hotel_unit {
+    font-family: "MullerRegular";
+    font-size: 16px;
+    height: 30px;
+    color: #cfcfcf;
+}
+
+.sequence_list_star {
+    margin: 0px;
+    padding: 0px;
+    width: 90px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accommodation_li_star {
+    position: relative;
+    left: 240px;
+    bottom: 90px;
+}
+
+.accommodation_room {
+    font-family: "MullerBold";
+    font-size: 16px;
+    text-decoration: none;
+    color: #cc9933;
+    padding: 15px;
+    margin-left: 40px;
+    border: 1px solid #cc9933;
+    border-radius: 10px;
+}
+
+.accommodation_frame_all_var {
+    width: 370px;
+    height: 440px;
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+    background-image: url(../img/23.jpg);
+    background-repeat: no-repeat;
+    border: 0px solid;
+    border-radius: 10px;
+}
+
+.accommodation_link {
+    font-family: "MullerMedium";
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url(../img/narrow_white.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: relative;
+    top: 400px;
+}
+
+/* Contacts */
+.center_align {
+    align-items: center;
+    margin-right: 170px;
+}
+
+.contacs_frame {
+    width: 470px;
+    height: 820px;
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+}
+
+.inside_contacts_frame {
+    width: 470px;
+    height: 680px;
+    margin: 0;
+    margin-top: 24px;
+    padding: 17px;
+    padding-right: 13px;
+    padding-left: 13px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contacts_unit {
+    padding: 30px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.contacts_option {
+    font-family: "MullerRegular";
+    font-size: 22px;
+    color: #414141;
+}
+
+.contacts_description {
+    font-family: "MullerRegular";
+    font-size: 16px;
+    line-height: 25px;
+    color: #414141;
+    width: 250px;
+}
+
+.contacts_a {
+    color: #d3a74e;
+    text-decoration: none;
+}
+
+.contacts_button {
+    margin-top: 80px;
+}
+
+.create_route {
+    font-family: "MullerBold";
+    font-size: 16px;
+    text-decoration: none;
+    padding: 30px;
+    color: #d3a74e;
+    border: 1px solid #d3a74e;
+    border-radius: 10px;
+}
+
+.text_us_frame {
+    width: 340px;
+    height: 500px;
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+}
+
+.text_us_form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.text_us_textarea {
+    font-family: 'MullerRegular';
+    font-size: 16px;
+    margin-bottom: 25px;
+    padding: 20px;
+    padding-left: 16px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.text_us_button {
+    font-family: 'MullerBold';
+    font-size: 16px;
+    color: white;
+    border: 1px solid #cc9933;
+    background-color: #cc9933;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 22px;
+    background-color: #333333;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    background-image: url(../img/footer_sun_3.png);
+    background-repeat: no-repeat;
+    background-position: 85% 100%;
+    background-size: 220px;
+}
+
+.footer_text {
+    font-family: 'MullerRegular';
+    font-size: 16px;
+    color: white;
+    line-height: 32px;
+    width: 320px;
+    margin-bottom: 14px;
+}
+
+.footer_adress {
+    width: 355px;
+}
+
+.footer_politic {
+    font-family: 'MullerRegular';
+    font-size: 16px;
+    color: #cc9933;
+    text-decoration: none;
+}
+
+.footer_step {
+    margin-bottom: 14px;
+}
+
+.footer_a {
+    line-height: 24px;
+}
+
+.no_wrap {
+    flex-wrap: nowrap;
+}
+
+.footer_column {
+    padding: 40px;
+}
+
+.footer_img {
+    margin-bottom: 14px;
+    width: 50px;
+}
